@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icon-logo.png" type="image/x-icon" />
+    <title>Karma</title>
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/slick-product.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+        nonce="xIh3sJ0w"></script>
+</head>
+
+<body class="id">
+    <div class="wrap-header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item  active">
+                    <a class="nav-link" href="product.html">Dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recruitment.html">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="nav-right text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-invision"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-main">
+            <nav class="navbar navbar-expand-sm " id="navbar_top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="" class="logo-white">
+                        <img src="assets/images/logo-dark.webp" alt="" class="logo-dark">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-target="#navbar1" onclick="openNav()">
+                        <span class="navbar-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav mx-auto nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item  active">
+                                <a class="nav-link" href="product.html">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recruitment.html">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-invision"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-banner-breadcrumb">
+                <img src="assets/images/about.jpg" alt="">
+                <div class="content-banner" data-aos="zoom-in">
+                    <h1 class="text-center">Biệt thự ven sông</h1>
+                    <div class="breadcrumb-nav">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="product.html">Dự án</a></li>
+                            <li class="breadcrumb-item active">Biệt thự ven sông</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main_img">
+                                <div class="product-images demo-gallery">
+                                    <div class="main-img-slider">
+                                        <a data-fancybox="gallery" href="assets/images/product-detail1.jpg"><img
+                                                src="assets/images/product-detail1.jpg" class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href="assets/images/product-detail2.jpg"><img
+                                                src="assets/images/product-detail2.jpg" class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href="assets/images/product-detail3.jpg"><img
+                                                src="assets/images/product-detail3.jpg" class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href="assets/images/product-detail4.jpg"><img
+                                                src="assets/images/product-detail4.jpg" class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href="assets/images/product-detail5.jpg"><img
+                                                src="assets/images/product-detail5.jpg" class="img-fluid"></a>
+                                        <a data-fancybox="gallery" href="assets/images/product-detail6.jpg"><img
+                                                src="assets/images/product-detail6.jpg" class="img-fluid"></a>
+                                    </div>
+                                    <ul class="thumb-nav">
+                                        <li><img src="assets/images/product-detail1.jpg"></li>
+                                        <li><img src="assets/images/product-detail2.jpg"></li>
+                                        <li><img src="assets/images/product-detail3.jpg"></li>
+                                        <li><img src="assets/images/product-detail4.jpg"></li>
+                                        <li><img src="assets/images/product-detail5.jpg"></li>
+                                        <li><img src="assets/images/product-detail6.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 product-detail-content">
+                            <div class="name-product-detail">
+                                Biệt thự ven sông có hồ bơi và sân vườn
+                            </div>
+                            <!-- <div class="local">
+                                <i class="fas fa-map-marker-alt"></i> Tp.Hồ Chí Minh
+                            </div> -->
+                            <div class="vitri">
+                                Vị trí: 256 Bạch Đằng, Bình Thạnh, Tp.HCM
+                            </div>
+                            <div class='id-product'>
+                                Mã nhà đất: <strong>MANHADAT01</strong>
+                            </div>
+                            <div class="dientich">
+                                Diện tích: 200m<sup>2</sup>
+                            </div>
+                            <div class="huong">
+                                Hướng: Đông nam
+                            </div>
+                            <div class="status">
+                                Trạng thái: <span>Đang bán</span>
+                            </div>
+
+                            <div class="price">
+                                Giá: <span class="price-number">6.700.000.000 vnđ</span>
+                            </div>
+
+                            <!-- <button class="order-btn btn-move">Mua ngay</button> -->
+
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs nav-fill mt-4" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#duck" role="tab"
+                                        aria-controls="duck" aria-selected="true">Tổng quan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " data-toggle="tab" href="#chicken" role="tab"
+                                        aria-controls="chicken" aria-selected="false">Vị trí</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#kiwi" role="tab" aria-controls="kiwi"
+                                        aria-selected="false">Bán và cho thuê</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="duck" role="tabpanel" aria-labelledby="duck-tab">
+                                    <p>Bán biệt thự Galleria Nguyễn Hữu Thọ, Phước Kiển, Nhà Bè, diện tích đất 342.7m2,
+                                        diện tích sàn 882.4m2, kết cấu 5 tầng gồm 4 phòng ngủ và 5 toilet, cửa hướng
+                                        Đông Nam thoáng mát, đây là một khu phố nhà ở kết hợp thương mại theo mô hình
+                                        sang trọng, an ninh và văn minh. Nơi đây, bạn sẽ có cảm giác như lạc vào những
+                                        con phố miền Nam Châu Âu với những cửa hiệu kén khách.</p>
+                                    <p><img src="assets/images/product-detail1.jpg" class="w-100" alt=""></p>
+                                    <p>Không gian bên trong Galleria được thiết kế khoa học, tối ưu hóa về công năng.
+                                        Diện tích khuôn viên từ 140m2 – 405m2, có hai mặt thông thoáng với chiều rộng
+                                        5,7m – 20,5m và hệ thống các ô cửa kính cao rộng, hệ thống thang máy đến từng
+                                        tầng. Sự phân chia hợp lý không gian chung và riêng giúp mỗi căn biệt thự có thể
+                                        đáp ứng nhu cầu của cả một đại gia đình gồm nhiều thế hệ. Kiến trúc không cột
+                                        chống khiến Galleria thích hợp với nhiều phong cách trang trí nội thất khác
+                                        nhau. Ngoài ra, phòng khách lớn, trần nhà cao 6,45m, hai vách kính thông suốt
+                                        tạo không gian mở, thích hợp cho nhu cầu đa dạng của việc chuyển đổi công năng
+                                        giữa nhà ở và kinh doanh, làm văn phòng, shop thời trang, gallery nghệ thuật,…
+                                    </p>
+                                    <p><img src="assets/images/product-detail2.jpg" alt="" class="w-100"></p>
+                                    <p>Trải dài hơn 300m trên mặt tiền đường Nguyễn Hữu Thọ – một trong những tuyến
+                                        đường huyết mạch của khu Nam Sài Gòn nối liền ra cảng Hiệp Phước. Phía sau
+                                        Galleria sẽ là Phú Mỹ Hưng Giai đoạn 2 (92ha), đối diện sẽ là GS Xi Metro City
+                                        (350ha) được đầu tư bởi Lotte, hai đầu là khu Dragon City (65ha)… Có thể nói,
+                                        tiềm năng của Galleria càng lớn dần theo sự phát triển sôi động của trục đường
+                                        này.</p>
+                                </div>
+                                <div class="tab-pane " id="chicken" role="tabpanel" aria-labelledby="chicken-tab">
+                                    <p>- 5 phút để đến với Đại học Quốc tế RMIT, trung tâm thương mại VIVO City - 7 phút
+                                        để tận hưởng trải nghiệm mua sắm tại Lotte Mart, Parkson, Cresent Mall, Vikid
+                                        City, trường Quốc tế Nam Sài Gòn, trường Quốc tế Singapore - 12 phút để được tận
+                                        tình chăm sóc sức khỏe tại bệnh viện Tâm Đức, bệnh viện Pháp - Việt - 20 phút để
+                                        đến trung tâm thành phố, chợ Bến Thành
+                                    </p>
+                                    <p class="text-center">
+                                        <img src="assets/images/product-detail2.jpg" alt="" class="w-100">
+                                    </p>
+                                    <p>VinFast LUX cũng chính là mẫu xe đầu tiên của một thương hiệu Việt bước chân ra
+                                        sân chơi quốc tế. Buổi ra mắt trực tuyến của VinFast đã thu hút sự chú ý của
+                                        đông đảo người dân, khi trang web chính thức của hãng đã có thời điểm đạt hơn 1
+                                        triệu lượt xem. Bên cạnh đó, VinFast còn lọt Top Trending của Twitter ngay sau
+                                        màn ra mắt. Hàng loạt tờ báo lớn của quốc tế đều khen ngợi thiết kế 2 mẫu xe
+                                        VinFast mới
+                                    </p>
+                                    <p>Đầu xe ấn tượng với thiết kế bề thế và thể thao. Các chi tiết nổi bật bao gồm
+                                        logo VinFast, đèn chiếu sáng LED, dải đèn LED kéo trải dài từ trái sang phải,
+                                        lưới tản nhiệt đa giác phía trên, lưới tản nhiệt bên dưới và phần cản trước thấp
+                                        bên dưới.
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="kiwi" role="tabpanel" aria-labelledby="kiwi-tab">
+                                    <div class="row">
+                                        <ul class="col-md-6 tab-pane-list">
+                                            <li>Ban công</li>
+                                            <li>Sân  vườn</li>
+                                            <li>Góc làm việc</li>
+                                            <li>Nuôi thú cưng</li>
+                                            <li>Chỗ đậu xe hơi</li>
+                                        </ul>
+                                        <ul class="col-md-6 tab-pane-list">
+                                            <li>Phòng cho giúp việc</li>
+                                            <li>Phòng giải trí</li>
+                                            <li>Tầng hầm</li>
+                                            <li>Nhà kho</li>
+                                            <li>Gym</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                            <h4 class="pb-2 splq">Sản phẩm liên quan</h4>
+                            <div class="product slick">
+                                <div class="card-product">
+                                    <div class="card-img">
+                                        <img src="assets/images/product6.jpg" alt="">
+                                        <div class="ovrly"></div>
+                                        <div class="buttons">
+                                            <a href="product-detail.html" class="fa fa-eye"></a>
+                                            <a href="#" class="fa fa-shopping-cart"></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <span class="name-product">
+                                                Nhà đẹp Hồ Chí Minh
+                                            </span>
+                                            <div class="price">
+                                                Giá: <span>2.000.000.000 vnđ</span>
+                                            </div>
+                                            <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-img">
+                                        <img src="assets/images/product5.jpg" alt="">
+                                        <div class="ovrly"></div>
+                                        <div class="buttons">
+                                            <a href="product-detail.html" class="fa fa-eye"></a>
+                                            <a href="#" class="fa fa-shopping-cart"></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <span class="name-product">
+                                                Nhà đẹp Hồ Chí Minh
+                                            </span>
+                                            <div class="price">
+                                                Giá: <span>2.000.000.000 vnđ</span>
+                                            </div>
+                                            <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-img">
+                                        <img src="assets/images/product4.jpg" alt="">
+                                        <div class="ovrly"></div>
+                                        <div class="buttons">
+                                            <a href="product-detail.html" class="fa fa-eye"></a>
+                                            <a href="#" class="fa fa-shopping-cart"></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <span class="name-product">
+                                                Nhà đẹp Hồ Chí Minh
+                                            </span>
+                                            <div class="price">
+                                                Giá: <span>2.000.000.000 vnđ</span>
+                                            </div>
+                                            <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-img">
+                                        <img src="assets/images/album3.jpg" alt="">
+                                        <div class="ovrly"></div>
+                                        <div class="buttons">
+                                            <a href="product-detail.html" class="fa fa-eye"></a>
+                                            <a href="#" class="fa fa-shopping-cart"></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <span class="name-product">
+                                                Nhà đẹp Hồ Chí Minh
+                                            </span>
+                                            <div class="price">
+                                                Giá: <span>2.000.000.000 vnđ</span>
+                                            </div>
+                                            <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-img">
+                                        <img src="assets/images/product3.jpg" alt="">
+                                        <div class="ovrly"></div>
+                                        <div class="buttons">
+                                            <a href="product-detail.html" class="fa fa-eye"></a>
+                                            <a href="#" class="fa fa-shopping-cart"></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <span class="name-product">
+                                                Nhà đẹp Hồ Chí Minh
+                                            </span>
+                                            <div class="price">
+                                                Giá: <span>2.000.000.000 vnđ</span>
+                                            </div>
+                                            <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-contact d-none d-sm-block">
+                        <div class="card-title">
+                            Liên hệ tư vấn
+                        </div>
+                        <div class="card-contact-img text-center">
+                            <img src="assets/images/contact2.png" alt="">
+                        </div>
+                        <div class="card-contact-body text-center">
+                            <span class="card-contact-title">Chuyên viên đã sẵn sàng hỗ trợ!</span>
+                            <span class="card-contact-title_subtitle">Tư vấn hoàn toàn miễn phí</span>
+                            <p class="text-small-center">
+                                <span>Mã nhà đất <strong>AUN57809</strong></span>
+                            </p>
+                            <button class="contact-btn">Liên hệ ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 class="title-footer">
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                    </h4>
+                    <div class="menu-footer">
+                        <p>256 Bạch Đằng, Bình Thạnh, HCM</p>
+                        <p>+ (84) 819 79 555</p>
+                        <p>hotro@gmail.com</p>
+                    </div>
+                    <ul class="socials-link">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-invision"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="title-footer">
+                                Đường dẫn
+                            </h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="menu-footer">
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="about.html">Giới thiệu</a></li>
+                                        <li><a href="about.html">Dự Án</a></li>
+                                        <li><a href="news.html">Tin tức</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="menu-footer">
+                                        <li><a href="videos.html">Videos</a></li>
+                                        <li><a href="recruitment.html">Tuyển dụng</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title-footer">
+                                Tin tức gần đây
+                            </h4>
+                            <ul class="menu-footer">
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news1.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Tin tức nổi bật trong ngày </span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news2.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Flast Sale giá siêu ưu đãi cho khách vip</span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news3.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Sự kiện đón năm mới</span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title-footer">Đăng kí nhận tin</h4>
+                            <form action="" class="receive-news">
+                                <div class="form-group">
+                                    <input id="my-input" class="form-control" type="text" name="" placeholder="Email">
+                                    <button type="submit" class="form-control mt-3">ĐĂNG KÍ</button>
+                                </div>
+                                <span class="text-white">* Nhận các bản cập nhật và ưu đãi mới nhất</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/page.js"></script>
+    <script src="assets/js/function.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+</body>
+
+</html>

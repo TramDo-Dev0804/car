@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icon-logo.png" type="image/x-icon" />
+    <title>Karma</title>
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="id">
+    <div class="wrap-header">
+        <!-- <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="local">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> 256 Bạch Đằng, Bình Thạnh, HCM
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i> hotro123@gmail.com
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i> 098 3317 445
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <div class="search">
+                            <i class="fas fa-search search-icon"></i>
+                            <div class="search-screen">
+                                <i class="close-icon fas fa-times"></i>
+                                <input type="text" class="search-box" placeholder="Tìm kiếm...">
+                                <p class="search-note">Tìm kiếm từ khóa bạn cần tại đây !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recruitment.html">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="nav-right text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-invision"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-main">
+            <nav class="navbar navbar-expand-sm " id="navbar_top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="" class="logo-white">
+                        <img src="assets/images/logo-dark.webp" alt="" class="logo-dark">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-target="#navbar1" onclick="openNav()">
+                        <span class="navbar-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav mx-auto nav-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recruitment.html">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-invision"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-banner">
+                <img src="assets/images/banner-header.jpg" alt="">
+                <div class="content-banner" data-aos="zoom-in">
+                    <h1 class="">Giải pháp CNTT hiệu quả cho doanh nghiệp</h1>
+                    <p>Chúng tôi mang đến cho bạn nền tảng công nghiệp giúp danh nghiệp quản trị đồng bộ </p>
+                    <div class="content-banner-bottom">
+                        <a href="about.html" class="btn-default btn-move">XEM THÊM</button>
+                            <a href="product.html" class="btn-default btn-services">DỊCH VỤ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="about-demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 about-demo-content">
+                        <h6>CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI VINAGROUP</h6>
+                        <h2>VỀ CHÚNG TÔI</h2>
+                        <p> <strong>Vinagroups</strong> được thành lập từ năm 2004, với sứ mệnh giúp doanh nghiệp Việt
+                            tối ưu hoạt động kinh doanh của mình, hỗ trợ doanh nghiệp Việt đưa hoạt động kinh doanh của
+                            họ lên Internet, giúp họ tập trung và phát huy tối đa lợi thế của họ để có chỗ đứng vững
+                            chắc tại thị trường Việt Nam và vươn ra quốc tế. Với tầm nhìn là
+                            doanh nghiệp điện tử kinh tế hàng đầu tại Việt Nam hoạt động trên cả kênh online và offline,
+                            tạo ra kênh kết nối sâu và rộng mọi thành phần trong nền kinh tế, giúp tối đa hóa lợi ích
+                            của tất cả thành viên tham gia.</p>
+                        <a href="about.html" class="xemthem">Xem thêm <i
+                                class="fas fa-long-arrow-alt-right pl-2"></i></a>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe class="video-about" src="https://www.youtube.com/embed/6wbZZXINS8k"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-hot">
+            <div class="title-box text-center" >
+                <h6>
+                    Vinagroups sản phẩm
+                </h6>
+                <h2>SẢN PHẨM NỔI BẬT</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6" >
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/about2.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Sản phẩm chất lượng cao 
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6" >
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/album3.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp Hồ Chí Minh
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/product3.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp Hồ Chí Minh
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6" >
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/product4.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp Hồ Chí Minh
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/product5.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp sang xịn có sân vườn, hồ bơi
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6" >
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/product6.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp Hồ Chí Minh
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/product7.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp Hồ Chí Minh
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card-product">
+                            <div class="card-img">
+                                <img src="assets/images/product8.jpg" alt="">
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="product-detail.html" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-shopping-cart"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="product-detail.html">
+                                    <span class="name-product">
+                                        Nhà đẹp Hồ Chí Minh
+                                    </span>
+                                    <div class="price">
+                                        Giá: <span>2.000.000.000 vnđ</span>
+                                    </div>
+                                    <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <a href="product.html" class="read-more-all">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-local" >
+            <div class="title-box text-center">
+                <h6>
+                    Dự án của chúng tôi
+                </h6>
+                <h2>CÁC DỰ ÁN THEO KHU VỰC</h2>
+            </div>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-3">
+                        <div class="card-project">
+                            <img src="assets/images/duan.png" alt="" />
+                            <div class="card-content">
+                                <h3>Showroom 256</h3>
+                                <p>We are so busy watching out for what's just ahead of us that we don't take the time
+                                    to enjoy where we are.</p>
+                                <a href="product-detail.html" class="read-more">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-project">
+                            <img src="assets/images/duan2.png" alt="" />
+                            <div class="card-content">
+                                <h3>Showroom 3/2</h3>
+                                <p>We are so busy watching out for what's just ahead of us that we don't take the time
+                                    to enjoy where we are.</p>
+                                <a href="product-detail.html" class="read-more">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-project">
+                            <img src="assets/images/duan3.png" alt="" />
+                            <div class="card-content">
+                                <h3>Showroom Bến Tre</h3>
+                                <p>We are so busy watching out for what's just ahead of us that we don't take the time
+                                    to enjoy where we are.</p>
+                                <a href="product-detail.html" class="read-more">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-project">
+                            <img src="assets/images/duan4.jpg" alt="" />
+                            <div class="card-content">
+                                <h3>Showroom Hà Nội</h3>
+                                <p>We are so busy watching out for what's just ahead of us that we don't take the time
+                                    to enjoy where we are.</p>
+                                <a href="product-detail.html" class="read-more">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="album">
+            <div class="content-album">
+                <div class="title-box text-center">
+                    <h2 class="text-white">ALBUM HOT</h2>
+                </div>
+                <div class="album-slick slick position-relative mb-4">
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/album1.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/album2.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/product4.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/album4.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/product1.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/product2.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                    <div class="album-img">
+                        <img class="img-responsive" src="assets/images/product3.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="album-detail.html"><i class="far fa-image"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="album.html" class="read-more-all">Xem tất cả</a>
+                </div>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="title-box text-center">
+                <h2>VIDEO HOT</h2>
+            </div>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-video">
+                            <div class="video-main">
+                                <a href="videos-detail.html" class="position-relative">
+                                    <img src="assets/images/product1.jpg" alt="" class="w-100">
+                                    <div class="icon-ytb">
+                                        <a href="videos-detail.html"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="video-content">
+                                <a href="videos-detail.html">
+                                    <div class="name-product">
+                                        Biệt thự ven xong sài gòn
+                                    </div>
+                                    <div class="describe-video">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti
+                                        reprehenderit, iste cum eum cumque iure fugiat provident a commodi! Delectus
+                                        quia deleniti nihil vel tenetur. Eaque dolores atque voluptates.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 video-left">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-video">
+                                    <div class="video-main">
+                                        <a href="videos-detail.html" class="position-relative">
+                                            <img src="assets/images/product2.jpg" alt="" class="w-100">
+                                            <div class="icon-ytb">
+                                                <a href="videos-detail.html"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="video-content">
+                                        <a href="videos-detail.html">
+                                            <div class="name-product">
+                                                Biệt thự ven xong sài gòn
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-video">
+                                    <div class="video-main">
+                                        <a href="videos-detail.html" class="position-relative">
+                                            <img src="assets/images/product3.jpg" alt="" class="w-100">
+                                            <div class="icon-ytb">
+                                                <a href="videos-detail.html"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="video-content">
+                                        <a href="videos-detail.html">
+                                            <div class="name-product">
+                                                Biệt thự ven xong sài gòn
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-video">
+                                    <div class="video-main">
+                                        <a href="videos-detail.html" class="position-relative">
+                                            <img src="assets/images/product4.jpg" alt="" class="w-100">
+                                            <div class="icon-ytb">
+                                                <a href="videos-detail.html"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="video-content">
+                                        <a href="videos-detail.html">
+                                            <div class="name-product">
+                                                Biệt thự ven xong sài gòn
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-video">
+                                    <div class="video-main">
+                                        <a href="videos-detail.html" class="position-relative">
+                                            <img src="assets/images/product5.jpg" alt="" class="w-100">
+                                            <div class="icon-ytb">
+                                                <a href="videos-detail.html"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="video-content">
+                                        <a href="videos-detail.html">
+                                            <div class="name-product">
+                                                Biệt thự ven xong sài gòn
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="videos.html" class="read-more-all">Xem tất cả</a>
+            </div>
+        </div>
+        <div class="news">
+            <div class="title-box text-center">
+                <h2>TIN TỨC NỔI BẬT</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-news h-100">
+                            <div class="card-img-top">
+                                <a href="news-detail.html">
+                                    <img src="assets/images/album2.jpg" alt="" />
+                                </a>
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="news-detail.html" class="fa fa-search"></a>
+                                </div>
+                            </div>
+                            <div class="card-news-body">
+                                <a href="news-detail.html">
+                                    <div class="date">Ngày 15 tháng 12 năm 2021</div>
+                                    <hr class="my-2">
+                                    <h3>World news highlights of the day</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest
+                                        bearing on
+                                        what
+                                        happens to me anyway. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dicta tempora
+                                        explicabo eos omnis dolorum culpa ipsum ipsa ea sed soluta officia fugit
+                                        similique iste
+                                        aspernatur nulla, iure et. Incidunt, accusamus.
+                                    </p>
+                                    <a href="about.html" class="xemthem">Xem thêm <i
+                                        class="fas fa-long-arrow-alt-right pl-2"></i></a>
+                                </a>
+
+                            </div>
+                            <div class="card-news-bottom">
+                                <div class="views"><i class="far fa-eye"></i>2,907</div>
+                                <div class="love"><i class="far fa-heart"></i>623</div>
+                                <div class="comments"><i class="far fa-comments"></i>23</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-news h-100">
+                            <div class="card-img-top">
+                                <a href="news-detail.html">
+                                    <img src="assets/images/album1.jpg" alt="" />
+                                </a>
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="news-detail.html" class="fa fa-search"></a>
+                                </div>
+                            </div>
+                            <div class="card-news-body">
+                                <a href="news-detail.html">
+                                    <div class="date">Ngày 15 tháng 12 năm 2021</div>
+                                    <hr class="my-2">
+                                    <h3>World news highlights of the day</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest
+                                        bearing on
+                                        what
+                                        happens to me anyway. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dicta tempora
+                                        explicabo eos omnis dolorum culpa ipsum ipsa ea sed soluta officia fugit
+                                        similique iste
+                                        aspernatur nulla, iure et. Incidunt, accusamus.
+                                    </p>
+                                    <a href="about.html" class="xemthem">Xem thêm <i
+                                        class="fas fa-long-arrow-alt-right pl-2"></i></a>
+                                </a>
+                            </div>
+                            <div class="card-news-bottom">
+                                <div class="views"><i class="far fa-eye"></i>2,907</div>
+                                <div class="love"><i class="far fa-heart"></i>623</div>
+                                <div class="comments"><i class="far fa-comments"></i>23</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-news h-100">
+                            <div class="card-img-top">
+                                <a href="news-detail.html">
+                                    <img src="assets/images/album4.jpg" alt="" />
+                                </a>
+                                <div class="ovrly"></div>
+                                <div class="buttons">
+                                    <a href="news-detail.html" class="fa fa-search"></a>
+                                </div>
+                            </div>
+                            <div class="card-news-body">
+                                <a href="news-detail.html">
+                                    <div class="date">Ngày 15 tháng 12 năm 2021</div>
+                                    <hr class="my-2">
+                                    <h3>World news highlights of the day</h3>
+                                    <p>
+                                        I don't need to compromise my principles, because they don't have the slightest
+                                        bearing on
+                                        what
+                                        happens to me anyway. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dicta tempora
+                                        explicabo eos omnis dolorum culpa ipsum ipsa ea sed soluta officia fugit
+                                        similique iste
+                                        aspernatur nulla, iure et. Incidunt, accusamus.
+                                    </p>
+                                    <a href="about.html" class="xemthem">Xem thêm <i
+                                        class="fas fa-long-arrow-alt-right pl-2"></i></a>
+                                </a>
+                            </div>
+                            <div class="card-news-bottom">
+                                <div class="views"><i class="far fa-eye"></i>2,907</div>
+                                <div class="love"><i class="far fa-heart"></i>623</div>
+                                <div class="comments"><i class="far fa-comments"></i>23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="news.html" class="read-more-all">Xem tất cả</a>
+                </div>
+            </div>
+        </div>
+        <div class="support">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="support-left text-center">
+                            <img src="assets/images/hotro.png" alt="" class="w-100">
+                            <span>Dịch vụ hỗ trợ khách hàng luôn sẵn sàng 24/7</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 support-form">
+                        <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
+                        role="form">
+                        <h2 class="form-title text-uppercase">Nhận tư vấn</h2>
+                        <div class="form-group">
+                            <label class="form-label" id="nameLabel" for="name"></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Họ và tên"
+                                tabindex="1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" id="emailLabel" for="email"></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                tabindex="2">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" id="subjectLabel" for="sublect"></label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Số điện thoại"
+                                tabindex="3">
+                        </div>
+                        
+                        <div class="text-center margin-top-25">
+                            <button type="submit" class="btn btn-mod btn-border btn-large">Gửi tin nhắn</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 class="title-footer">
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                    </h4>
+                    <div class="menu-footer">
+                        <p>256 Bạch Đằng, Bình Thạnh, HCM</p>
+                        <p>+ (84) 819 79 555</p>
+                        <p>hotro@gmail.com</p>
+                    </div>
+                    <ul class="socials-link">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-invision"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="title-footer">
+                                Đường dẫn
+                            </h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="menu-footer">
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="about.html">Giới thiệu</a></li>
+                                        <li><a href="about.html">Dự Án</a></li>
+                                        <li><a href="news.html">Tin tức</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="menu-footer">
+                                        <li><a href="videos.html">Videos</a></li>
+                                        <li><a href="recruitment.html">Tuyển dụng</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title-footer">
+                                Tin tức gần đây
+                            </h4>
+                            <ul class="menu-footer">
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news1.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Tin tức nổi bật trong ngày </span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news2.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Flast Sale giá siêu ưu đãi cho khách vip</span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news3.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Sự kiện đón năm mới</span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title-footer">Đăng kí nhận tin</h4>
+                            <form action="" class="receive-news">
+                                <div class="form-group">
+                                    <input id="my-input" class="form-control" type="text" name="" placeholder="Email">
+                                    <button type="submit" class="form-control mt-3">ĐĂNG KÍ</button>
+                                </div>
+                               <span class="text-white">* Nhận các bản cập nhật và ưu đãi mới nhất</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/page.js"></script>
+</body>
+
+</html>

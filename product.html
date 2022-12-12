@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icon-logo.png" type="image/x-icon" />
+    <title>Karma</title>
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body class="id">
+    <div class="wrap-header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="product.html">Dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recruitment.html">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="nav-right text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-invision"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-main">
+            <nav class="navbar navbar-expand-sm " id="navbar_top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="" class="logo-white">
+                        <img src="assets/images/logo-dark.webp" alt="" class="logo-dark">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-target="#navbar1" onclick="openNav()">
+                        <span class="navbar-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav mx-auto nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item  active">
+                                <a class="nav-link" href="product.html">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recruitment.html">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-invision"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-banner-breadcrumb">
+                <img src="assets/images/about.jpg" alt="">
+                <div class="content-banner" data-aos="zoom-in">
+                    <h1 class="text-center">DỰ ÁN CỦA CHÚNG TÔI</h1>
+                    <div class="breadcrumb-nav">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item active">Dự án</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="accordion" class="myaccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="d-flex align-items-center justify-content-between btn btn-link"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Danh mục
+                                        <span class="fa-stack fa-sm">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="filter-link"> <a href="product.html" >
+                                            Home stay
+                                        </a></li>
+                                    <li class="filter-link"> <a href="product.html" >
+                                            Biệt thự
+                                        </a></li>
+                                    <li  class="filter-link"><a href="product.html">
+                                            Chung cư
+                                        </a></li>
+                                    <li class="filter-link"><a href="">
+                                            Nhà hàng
+                                        </a></li>
+                                    <li class="filter-link"> <a href="product.html" >
+                                            Khách sạn
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Vị trí
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Hà Nội
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Tp.Hồ Chí Minh
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Hải Phòng
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Đà Nẵng
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Bình Dương
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Lâm Đồng
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Bến Tre
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Phú Quốc
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Giá tiền
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                1tr vnđ - 10tr vnđ
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                10tr vnđ - 20tr vnđ
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                30tr vnđ - 40tr vnđ
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                50tr vnđ - 60tr vnđ
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                60tr vnđ - 70tr vnđ
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                80tr vnđ - 90tr vnđ
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Trên 100tr
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Tiện ích
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Ban công
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Hồ bơi
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                               Sân vườn
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                               Chỗ đậu xe hơi
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                               Góc làm việc
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                               Nuôi thú cưng
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                              Nhà Kho
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                              Gym
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Tình trạng
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Đang bán
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Đã Bán
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="" class="filter-button">
+                                                <input type="checkbox">
+                                                Đã bàn giao
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="filter-product">
+                        <span>Sắp xếp: </span>
+                        <select name="stt">
+                            <option value="">Giá</option>
+                            <option value="Cayenne">Từ cao đến thấp</option>
+                            <option value="911">Từ thấp đến cao</option>
+                        </select>
+                        <span>Hiển thị: </span>
+                        <select name="show" class="show-number">
+                            <option value="">9</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    <div class="row mt-3 row-product-main">
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/about2.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Sản phẩm chất lượng cao 
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/album3.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product3.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product4.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product5.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp sang xịn có sân vườn, hồ bơi
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product6.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product7.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product8.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/about2.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Sản phẩm chất lượng cao 
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/album3.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product3.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product4.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product5.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp sang xịn có sân vườn, hồ bơi
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product6.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product7.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" >
+                            <div class="card-product">
+                                <div class="card-img">
+                                    <img src="assets/images/product8.jpg" alt="">
+                                    <div class="ovrly"></div>
+                                    <div class="buttons">
+                                        <a href="product-detail.html" class="fa fa-eye"></a>
+                                        <a href="#" class="fa fa-shopping-cart"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="product-detail.html">
+                                        <span class="name-product">
+                                            Nhà đẹp Hồ Chí Minh
+                                        </span>
+                                        <div class="price">
+                                            Giá: <span>2.000.000.000 vnđ</span>
+                                        </div>
+                                        <span class="local"><i class="fas fa-map-marker-alt pr-1"></i> Tp.Hồ Chí Minh</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="pagination justify-content-center mx-auto text-center">
+                                <li><a href="#" class="prev"><i class="fas fa-angle-double-left"></i></a></li>
+                                <li class="pageNumber active"><a href="#">1</a></li>
+                                <li class="pageNumber"><a href="#">2</a></li>
+                                <li class="pageNumber"><a href="#">3</a></li>
+                                <li class="pageNumber"><a href="#">4</a></li>
+                                <li class="pageNumber"><a href="#">5</a></li>
+                                <li class="pageNumber"><a href="#">6</a></li>
+                                <li><a href="#" class="next"><i class="fas fa-angle-double-right"></i></a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 class="title-footer">
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                    </h4>
+                    <div class="menu-footer">
+                        <p>256 Bạch Đằng, Bình Thạnh, HCM</p>
+                        <p>+ (84) 819 79 555</p>
+                        <p>hotro@gmail.com</p>
+                    </div>
+                    <ul class="socials-link">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-invision"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="title-footer">
+                                Đường dẫn
+                            </h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="menu-footer">
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="about.html">Giới thiệu</a></li>
+                                        <li><a href="about.html">Dự Án</a></li>
+                                        <li><a href="news.html">Tin tức</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="menu-footer">
+                                        <li><a href="videos.html">Videos</a></li>
+                                        <li><a href="recruitment.html">Tuyển dụng</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title-footer">
+                                Tin tức gần đây
+                            </h4>
+                            <ul class="menu-footer">
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news1.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Tin tức nổi bật trong ngày </span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news2.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Flast Sale giá siêu ưu đãi cho khách vip</span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html" class="img-mini">
+                                        <img src="assets/images/news3.jpg">
+                                    </a>
+                                    <a href="news-detail.html" class="name-mini">
+                                        <span class="text">Sự kiện đón năm mới</span>
+                                        <span class="date">Ngày 13/10/2021</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title-footer">Đăng kí nhận tin</h4>
+                            <form action="" class="receive-news">
+                                <div class="form-group">
+                                    <input id="my-input" class="form-control" type="text" name="" placeholder="Email">
+                                    <button type="submit" class="form-control mt-3">ĐĂNG KÍ</button>
+                                </div>
+                                <span class="text-white">* Nhận các bản cập nhật và ưu đãi mới nhất</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/page.js"></script>
+    <script src="assets/js/function.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+</body>
+
+</html>
